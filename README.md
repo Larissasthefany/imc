@@ -30,6 +30,9 @@ Calculadora-IMC/
 │── index.html (Estrutura principal do projeto)
 ```
 
+## 🔄 Evolução do Projeto
+Inicialmente, o projeto foi desenvolvido utilizando apenas HTML, mas pretendo criar versões melhoradas utilizando JavaScript puro para aprimorar a interatividade e funcionalidades.
+
 ## 📜 Licença
 Este projeto está sob a licença MIT. Sinta-se à vontade para modificá-lo e usá-lo como desejar.
 
