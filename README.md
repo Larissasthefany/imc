@@ -31,7 +31,7 @@ Calculadora-IMC/
 ```
 
 ## 🔄 Evolução do Projeto
-Inicialmente, o projeto foi desenvolvido utilizando apenas HTML, mas pretendo criar versões melhoradas utilizando JavaScript puro para aprimorar a interatividade e funcionalidades.
+Inicialmente, o projeto foi desenvolvido utilizando apenas HTML, mas pretendo aprimorá-lo utilizando JavaScript puro para adicionar mais interatividade e funcionalidades.
 
 ## 📜 Licença
 Este projeto está sob a licença MIT. Sinta-se à vontade para modificá-lo e usá-lo como desejar.
