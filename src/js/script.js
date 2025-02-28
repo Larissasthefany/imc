@@ -10,15 +10,17 @@ function calcularImc() {
   const resultado = document.querySelector("#resultado");
 
   if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
-    resultado.innerHTML = `Por favor, insira um valor válido!`;
+    resultado.textContent = `Por favor, insira um valor válido!`;
+    resultado.style.color = "red";
     return;
   }
 
   // Limpa o resultado anterior
-  resultado.innerHTML = "";
+  resultado.textContent = "";
 
   const imc = peso / (altura * altura);
-  resultado.innerHTML = `Seu IMC é: ${imc.toFixed(2)}<br>`;
+  resultado.innerHTML = `Seu IMC é: ${imc.toFixed(2)} <br>`;
+  resultado.style.color = "black";
 
   if (imc < 18.5) {
     resultado.innerHTML += `Classificação: Abaixo do Peso`;
