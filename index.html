@@ -8,75 +8,36 @@
   </head>
   <body>
     <header class="logo">
-      <img src="./src/img/imc.png" alt="Logo do Imc" srcset="">
+      <img src="./src/img/imc.png" alt="Logo do Imc" srcset="" />
     </header>
 
     <main>
       <div class="container">
-        <section class="about">
-          <h1 class="title-default">imc</h1>
-          <h3 class="title">Cálculo IMC</h3>
-          <p>
-            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
-            Organização Mundial de Saúde para calcular o peso ideal de cada
-            pessoa.
-          </p>
-          <p>
-            O índice é calculado da seguinte maneira: divide-se o peso do
-            paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo
-            tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
-          </p>
-          <p>
-            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos
-            abaixo e compare com os índices da tabela. Importante: siga os
-            exemplos e use pontos como separadores.
-          </p>
-        </section>
+          <!-- Aqui o JavaScript vai inserir dinamicamente a seção sobre o IMC -->
+          <div id="conteudo"></div>
 
-        <section class="input-container">
-          <div class="calculator-section">
-            <div class="input-group">
-              <input
-                type="number"
-                name="altura"
-                id="altura"
-                placeholder=" "
-                required
-              />
-              <label for="altura">Altura (m)</label>
-            </div>
-            <div class="input-group">
-              <input
-                type="number"
-                name="peso"
-                id="peso"
-                placeholder=" "
-                required
-              />
-              <label for="peso">Peso (kg)</label>
-            </div>
-          </div>
+          <!-- Seção do formulário para calcular o IMC -->
+          <section class="input-container">
+              <div class="calculator-section">
+                  <div class="input-group">
+                      <input type="number" name="altura" id="altura" placeholder=" " required />
+                      <label for="altura">Altura (m)</label>
+                  </div>
+                  <div class="input-group">
+                      <input type="number" name="peso" id="peso" placeholder=" " required />
+                      <label for="peso">Peso (kg)</label>
+                  </div>
+              </div>
 
-          <div class="button-group">
-            <input
-              type="button"
-              id="btn"
-              value="Calcular"
-              onclick="calcularImc()"
-            />
+              <div class="button-group">
+                  <input type="button" id="btn" value="Calcular" />
+                  <input type="button" id="limpar" value="Limpar" />
+              </div>
 
-            <input
-              type="button"
-              id="limpar"
-              value="Limpar"
-              onclick="limpar()"
-            />
-          </div>
-
-          <p id="resultado"></p>
-        </section>
+              <p id="resultado"></p>
+          </section>
       </div>
-    </main>
+  </main>
 
     <script src="./src/js/script.js"></script>
   </body>
