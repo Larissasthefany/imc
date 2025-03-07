@@ -17,9 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     criarSecao() {
       const section = this.criarElemento("section", "about");
-
       const h1 = this.criarElemento("h1", "title-default", this.titulo);
-
       const h3 = this.criarElemento("h3", "title", this.subtitulo);
 
       section.appendChild(h1);
@@ -61,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resultado.style.color = "red";
       return;
     }
-
+    
     // Limpa o resultado anterior
     // resultado.textContent = "";
 

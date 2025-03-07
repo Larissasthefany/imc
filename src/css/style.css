@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #2196f3;
+  --second-color: #707070;
+
+  --background-color: #f5f5f5;
+
+  --white:#fff;
+  --font: "Poppins", serif;
+  --bord: #00000044;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 13px;
+  border-bottom: 1px solid var(--bord);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-width: 1000px;
+  width: 90%;
+  margin: 30px auto 0;
+  padding: 40px;
+
+  font-family: var(--font);
+  font-weight: 400;
+  font-style: normal;
+}
+
+main .title-default {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+main .title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+main .about {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 40px;
+  color: var(--second-color);
+  line-height: 1.6;
+}
+
+.container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.container .calculator-section {
+  display: flex;
+  gap: 10px;
+}
+
+.calculator-section .input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.calculator-section .input-group input {
+  width: 150px;
+  padding: 15px 7px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.calculator-section .input-group label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+  border-color: var(--primary-color);
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: var(--primary-color);
+  background: var(--white);
+  padding: 0 5px;
+}
+
+.input-container .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button,
+input[type="button"] {
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.input-container .button-group input {
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.input-container .button-group input:hover {
+  background-color: #8ab6dd;
+}
