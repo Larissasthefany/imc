@@ -1,6 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("conteudo");
 
+  document.getElementById("altura").addEventListener("input", function (e) {
+    let valor = e.target.value.replace(/\D/g, "");
+    if (valor.length > 2) {
+      valor = valor.slice(0, 1) + "." + valor.slice(1);
+    }
+    if (valor.length > 4) {
+      valor = valor.slice(0, 4);
+    }
+    e.target.value = valor;
+  });
+
+  document.getElementById("peso").addEventListener("input", function (e) {
+    let valorPeso = e.target.value.replace(/\D/g, "");
+    if (valorPeso.length > 3) {
+      valorPeso = valorPeso.slice(0, 2) + "." + valorPeso.slice(2);
+    }
+
+    if (valorPeso.length > 5) {
+      valorPeso = valorPeso.slice(0, 5);
+    }
+    e.target.value = valorPeso;
+  });
   class TextoIMC {
     constructor(titulo, subtitulo, textos) {
       this.titulo = titulo;
@@ -59,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resultado.style.color = "red";
       return;
     }
-    
+
     // Limpa o resultado anterior
     // resultado.textContent = "";
 
