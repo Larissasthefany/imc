@@ -9,36 +9,60 @@
   <body>
     <header class="logo">
       <img src="./src/img/imc.svg" alt="Logo do Imc" srcset="" />
+
+      <div>
+        <label class="toggle" arial-label="Toggle dark mode">
+          <input type="checkbox" id="modeToggle" />
+          <span>☀️</span>
+          <span>🌙</span>
+        </label>
+      </div>
+      
     </header>
 
     <main>
       <div class="container">
-          <!-- Aqui o JavaScript vai inserir dinamicamente a seção sobre o IMC -->
-          <div id="conteudo"></div>
+        <!-- Aqui o JavaScript vai inserir dinamicamente a seção sobre o IMC -->
+        <div id="conteudo"></div>
 
-          <!-- Seção do formulário para calcular o IMC -->
-          <section class="input-container">
-              <div class="calculator-section">
-                  <div class="input-group">
-                      <input type="number" name="altura" id="altura" placeholder=" " maxlength="4" required />
-                      <label for="altura">Altura (m)</label>
-                  </div>
-                  <div class="input-group">
-                      <input type="number" name="peso" id="peso" placeholder=" " maxlength="5" required />
-                      <label for="peso">Peso (kg)</label>
-                  </div>
-              </div>
+        <!-- Seção do formulário para calcular o IMC -->
+        <section class="input-container">
+          <div class="calculator-section">
+            <div class="input-group">
+              <input
+                type="number"
+                name="altura"
+                id="altura"
+                placeholder=" "
+                maxlength="4"
+                required
+              />
+              <label for="altura">Altura (m)</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="number"
+                name="peso"
+                id="peso"
+                placeholder=" "
+                maxlength="5"
+                required
+              />
+              <label for="peso">Peso (kg)</label>
+            </div>
+          </div>
 
-              <div class="button-group">
-                  <input type="button" id="btn" value="Calcular" />
-                  <input type="button" id="limpar" value="Limpar" />
-              </div>
+          <div class="button-group">
+            <input type="button" id="btn" value="Calcular" />
+            <input type="button" id="limpar" value="Limpar" />
+          </div>
 
-              <p id="resultado"></p>
-          </section>
+          <p id="resultado"></p>
+        </section>
       </div>
-  </main>
+    </main>
 
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/themes.js"></script>
   </body>
 </html>
