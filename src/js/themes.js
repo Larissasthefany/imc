@@ -1,4 +1,3 @@
-// Ao carregar a página, verificar se o modo foi salvo no localStorage
 const savedMode = localStorage.getItem("mode");
 if (savedMode) {
   document.documentElement.dataset.mode = savedMode;
@@ -12,3 +11,4 @@ document.querySelector(".toggle input").addEventListener("change", (event) => {
   document.documentElement.dataset.mode = mode;
   localStorage.setItem("mode", mode); 
 });
+
